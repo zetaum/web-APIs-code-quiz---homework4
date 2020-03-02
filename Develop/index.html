@@ -10,34 +10,40 @@
 
 </head>
 <body>
-    <h1>Code Quiz</h1>
 
-<div id="quizContainer" Class='container'></div>
+    <div class="wrapper">
+        <header>
+          <h1>Code Quiz</h1>
+        </header>
+    
 
-       <div id="question" class='question'>Questions</div>
+<div Class='container'>
+
+       <div id="question-container" class='question'>Questions</div>
        <div class="form-check">
-        <input class="option" type="radio" name="choice" id="option1" value="1" checked>
-        <label class="option" for="exampleRadios1">
-          Default radio
+        <input class="form-check-input" type="radio" name="choice" id="option1" value="1" checked>
+        <label class="form-check-input" for="exampleRadios1">
+          Answer 1
         </label>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="choice" id="option2" value="2">
         <label class="form-check-label" for="exampleRadios2">
-          Second default radio
+            Answer 2
         </label>
       </div>
        <div class="form-check">
         <input class="form-check-input" type="radio" name="choice" id="option3" value="2" checked>
         <label class="form-check-label" for="exampleRadios3">
-          Third default radio
+            Answer 3
         </label>
     
       <div class="form-check">
         <input class="form-check-input" type="radio" name="choice" id="option4" value="2">
         <label class="form-check-label" for="exampleRadios4">
-          Fourth default radio
+            Answer 4
         </label>
       </div>
+      
       <button id="start"onclick="clock();loadQuestion(currentQuestion);">Start</button>
       <button id="next" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
       <br>
@@ -45,42 +51,8 @@
        <form style="display: inline" action="highscores.html" method="get">
                <button>Scores</button>
        </form>
-      <div id='result' class="container result" styles="display:none">
-      </div>
-
-
-      <section id="stopWatch">Timer<p id="timer">0</p>
-        <p id="fulltime"></p> 
-   </section> 
-      <div class="container">
-        <div class="timer">
-          <div id="hand"></div>
-          <div class="controls">
-            
-            
-            <div class="time">
-              <div id="minutes">20</div>
-              <div id="seconds">00</div>
-            </div>
-            <div class="buttons">
-              <button aria-label="play" id="play">
-                <i class="fa fa-play" aria-hidden="true"></i>
-              </button>
-              <button aria-label="pause" id="pause">
-                <i class="fa fa-pause" aria-hidden="true"></i>
-              </button>
-              <button aria-label="stop" id="stop">
-                <i class="fa fa-stop" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
+      
+    
     
        
    </div>
