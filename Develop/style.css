@@ -1,33 +1,40 @@
+  *,
 
-  .body {
-    width: 30px;
-    height: 30px;
-    border-style: solid;
-    padding: 2px;
-    float: left;
-    margin: 2px;
+    .html,
+body {
+  background-color: rgb(240, 230, 143);
+  font-family: sans-serif;
+}
+
+#Container{
+   height: 400px;
+   width: 200px;
+   padding: 10px;
+   border: 1px solid ;
+} 
+
+
+
+.question{
+padding: 20px;
+text-align: center;
+font-size: 28px;
+text-transform: uppercase;
+}
+
+
+h1 {
+    font-family: sans-serif;
+    margin-top: 78px;
+    height: 50px;
+    width: 220px;
+    margin-left: 60px;
+    text-align: center;
   }
 
-  .letter-button-color {
-    color: darkcyan;
+  #button {
+    padding-top: 10px;
+    color: rgb(119, 82, 25);
   }
 
  
-  #o {
-    margin-top: 78px;
-    height: 500px;
-    width: 220px;
-    margin-left: 60px;
-  }
-
-  #buttons {
-    padding-top: 60px;
-  }
-
-  #clear {
-    margin-left: 20px;
-    font-size: 25px;
-    color: black;
-    border-style: solid;
-    width: 100px;
-  }
