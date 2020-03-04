@@ -13,22 +13,30 @@ body,
   color: black;
   }
 
-body {
+h1 {
+
+text-align: center;
+
+}
+
+body { 
   padding: 0;
   margin: o;
-  display: flex;
-  background-color: rgb(240, 230, 143);
-  justify-content: center;
-  align-items: center;
+ 
+  background-color: rgb(60, 177, 231) !important;;
+  justify-content: left;
+  align-items: left;
 }
 
 .container {
   background-color: aliceblue; 
-  border-radius: 55px;
+  border-radius: 45px;
   padding: 100px;
   box-shadow: black;
   width: 80vh;
   height: 50vh;
-
 }
   
+
+
+ 
