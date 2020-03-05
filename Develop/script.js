@@ -37,6 +37,8 @@ var questions = [{
     answer: '1',
     }];
     
+
+
 var totalQuestions = questions.length;
 
 var container = document.getElementById('question-container');
@@ -50,8 +52,9 @@ var nextQuestion = document.getElementById ('next-btn');
 var resultCont = document.getElementById ('submit-btn');
 
 
-function loadQuestion (questionIndex) {
-   var q = questions [questionIndex];
+
+function loadQuestion(questionIndex) {
+   var q = questions[questionIndex];
    questionEl.textContent = (questionIndex + 1) + '.' + q.question;
    opt1.textContent = q.option1;
    opt2.textContent = q.option2;
@@ -70,8 +73,12 @@ function loadNextQuestion () {
     if(questions[currentQuestion].answer == answer) {
         score +=10;
     }
-    selectedOption.checked = false;
+
+    function NextQuestion(){
+    //selectedOption.checked = false;
     currentQuestion++;
+    }
+
     if(currentQuestion == totQuestions - 1) {
         nextButton.textContent = "Finish";
     }
@@ -81,8 +88,14 @@ function loadNextQuestion () {
         resultCont.textContent = "Your Score: " + score;
         return;
     }
-
+   questionEl.appendChild(button)
 
     loadQuestion(currentQuestion);
 }
 loadQuestion(currentQuestion);
+
+
+$(".button").click(function(event) {
+ $(this)
+ //   alert();
+});
